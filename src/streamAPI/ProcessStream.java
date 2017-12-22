@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * Stream APIを用いたロジッククラス.
+ * 
+ * @author Noriyuki-Shimizu
+ */
 public class ProcessStream {
 	
 	/** thisクラス */
@@ -58,6 +63,7 @@ public class ProcessStream {
 
 		// 実装
 		numList.stream()
+			// mapにより、FizzBussの抽出を行う
 			.map(num -> {
 				if(num % 3 == 0) {
 					return "Fizz";
@@ -67,6 +73,7 @@ public class ProcessStream {
 					return String.valueOf(num);
 				}
 			})
+			// 結果の出力
 			.forEach(System.out::println);
 	}
 

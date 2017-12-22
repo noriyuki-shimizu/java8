@@ -3,6 +3,11 @@ package viewMethod;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * メソッド参照を用いたロジック.
+ * 
+ * @author Noriyuki-Shimizu
+ */
 public class ProcessViewMethod {
 
 	/** thisクラス */
@@ -35,6 +40,7 @@ public class ProcessViewMethod {
 				// 最後に要素を出力
 				.forEach(System.out::println);
 
+		// 上記のラムダ式と行っている処理は同一
 		System.out.println("メソッド参照");
 		list.stream()
 			.map(String::toLowerCase)
